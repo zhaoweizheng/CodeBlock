@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kCTableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 懒加载
+
+-(UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[&lt;#EWTHCampCell#&gt; class] forCellReuseIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class])];
+        //_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _tableView;
+}
+
+#pragma mark — UITableViewDelegate, UITableViewDataSource
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#expression#&gt;;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    &lt;#EWTHCampCell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class])];
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    return &lt;#expression#&gt;;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>03CA3F90-4C26-404D-9F29-5A2E9DD5F245</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kCTableview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kCTableview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

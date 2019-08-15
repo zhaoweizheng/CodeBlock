@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kCCollectView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        //1.初始化layout
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        
+        layout.itemSize = CGSizeMake(StandardBy6(178), StandardBy6(134));
+        layout.minimumInteritemSpacing = StandardBy6(2);
+        layout.minimumLineSpacing = StandardBy6(20);
+        layout.sectionInset = UIEdgeInsetsMake(StandardBy6(12), StandardBy6(8), StandardBy6(12), StandardBy6(8));
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.showsVerticalScrollIndicator = NO;
+        
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        
+        [_collectionView registerClass:[&lt;#EWTDExamZListCell#&gt; class] forCellWithReuseIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class])];
+        
+        
+        [_collectionView registerClass:[&lt;#EWTDExamListZHeadView#&gt; class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class])];
+        
+        //4.设置代理
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+    }
+    return _collectionView;
+}
+
+#pragma mark - UICollectionDatasoure
+//显示几个section
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return &lt;#expression#&gt;;
+}
+
+//每个section中显示多个item
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return &lt;#expression#&gt;;
+}
+
+//配置单元格的方法
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    &lt;#EWTDExamZListCell#&gt;* cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class]) forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+//headerview的size
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionReusableView *reusableView = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        
+        &lt;#EWTDExamListZHeadView#&gt; *headerView = (&lt;#EWTDExamListZHeadView#&gt; *)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([&lt;#EWTHCampCell#&gt; class]) forIndexPath:indexPath];
+        
+        reusableView = headerView;
+    }
+    
+    return reusableView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3EEC701D-F224-47AC-A97B-99EB89741C5A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kCCollectView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kCCollectView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

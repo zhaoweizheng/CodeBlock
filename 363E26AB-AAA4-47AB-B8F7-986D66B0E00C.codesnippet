@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kAddTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.&lt;#view#&gt; addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.&lt;#view#&gt;);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>363E26AB-AAA4-47AB-B8F7-986D66B0E00C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kAddTableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kAddTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

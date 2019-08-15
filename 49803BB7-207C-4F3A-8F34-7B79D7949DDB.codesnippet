@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kDelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@protocol &lt;#LoginViewControllerDelegate#&gt; &lt;NSObject&gt;
+
+@required // 必须实现的方法 默认
+
+@optional // 可选实现的方法
+- (void)&lt;#loginViewControllerDidSuccess#&gt;:(&lt;#Class#&gt; *)&lt;#obj#&gt;;
+
+@end
+
+@property(nonatomic, weak) id&lt;&lt;#LoginViewControllerDelegate#&gt;&gt; &lt;#代理属性#&gt;;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49803BB7-207C-4F3A-8F34-7B79D7949DDB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kDelegate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

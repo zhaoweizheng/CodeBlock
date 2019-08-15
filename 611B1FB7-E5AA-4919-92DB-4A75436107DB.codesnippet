@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kHaoshi</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        //处理耗时操作在此次添加
+        &lt;#处理耗时操作在此次添加#&gt;
+        //通知主线程刷新
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //在主线程刷新UI
+            
+        });
+        
+    });
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>611B1FB7-E5AA-4919-92DB-4A75436107DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kHaoshi</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kHaoshi</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
